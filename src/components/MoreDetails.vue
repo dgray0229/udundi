@@ -1,75 +1,23 @@
 <script setup lang="ts"></script>
 
 <template>
-	<section id="more-details">
-		<h2>Explore</h2>
-		<div>
-			<img src="../assets/Plus.svg" />&nbsp;<strong>More Details</strong>
+	<section
+		id="more-details"
+		class="col-start-2 col-span-6 row-start-6 row-span-2 flex flex-col justify-start rounded transition-colors duration-300 md:row-start-10 md:row-span-2 xl:col-start-2 xl:col-span-6"
+	>
+		<h2
+			class="font-ditot text-7xl font-bold leading-tight tracking-tight text-left text-white m-0 md:text-11xl md:leading-none xl:text-14xl"
+		>
+			Explore
+		</h2>
+		<div class="flex justify-start items-center">
+			<img
+				src="../assets/Plus.svg"
+				class="w-full max-w-[2.6875rem] h-auto pr-4"
+			/>&nbsp;<strong
+				class="font-lato text-[1.5625rem] font-medium tracking-[0.625px] text-center text-white md:text-[1.5rem] md:leading-[1.875rem]"
+				>More Details</strong
+			>
 		</div>
 	</section>
 </template>
-
-<style scoped>
-h2 {
-	font-family: Didot;
-	font-size: 7rem;
-	font-weight: 700;
-	line-height: 1.25;
-	letter-spacing: 0;
-	text-align: left;
-	margin: 0;
-}
-div {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-img {
-	width: 100%;
-	max-width: 2.6875rem;
-	height: auto;
-	padding-right: 1rem;
-}
-
-strong {
-	font-family: Lato;
-	font-size: 1.5625rem;
-	font-weight: 400;
-	letter-spacing: 0.625px;
-	text-align: center;
-}
-#more-details {
-	grid-column: 2 / span 6;
-	grid-row: 6 / span 2;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	border-radius: 1rem;
-	transition: background 300ms;
-}
-
-@media screen and (min-width: 48rem) {
-	h2 {
-		font-size: 11rem;
-		line-height: 1;
-		text-align: left;
-	}
-
-	strong {
-		font-size: 1.5rem;
-		line-height: 1.875rem;
-		letter-spacing: 0.625px;
-	}
-	#more-details {
-		grid-row: 10 / span 2;
-	}
-}
-@media screen and (min-width: 90rem) {
-	h2 {
-		font-size: 14rem;
-	}
-	#more-details {
-		grid-column: 3 / span 6;
-	}
-}
-</style>
