@@ -27,6 +27,8 @@ export default {
 		extend: {
 			colors: {
 				primary: "#611818",
+				secondary: "#a36754",
+				body: "#282828",
 				transparent: "transparent",
 			},
 			fontSize: {
