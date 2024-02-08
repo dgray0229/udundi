@@ -5,7 +5,7 @@ import Socials from "./components/Socials.vue";
 <template>
 <main
     id="content"
-    class="relative from-primary gradient-start bg-right-top bg-no-repeat bg-cover w-screen h-screen grid grid-cols-4 min-h-screen shadow-inner bg-red-500 bg-opacity-50 md:grid-cols-8 md:gradient-md lg:grid-cols-16 lg:gradient-lg 2xl:grid-cols-16 2xl:gradient-xl"
+    class="from-primary gradient-start bg-right-top bg-no-repeat bg-cover w-screen h-screen grid grid-cols-4 min-h-screen shadow-inner bg-red-500 bg-opacity-50 md:grid-cols-8 md:gradient-md lg:grid-cols-16 lg:gradient-lg 2xl:grid-cols-16 2xl:gradient-xl"
 >
 		<MoreDetails />
 		<Socials />

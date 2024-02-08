@@ -1,7 +1,7 @@
 <template>
 	<section
 		id="explore"
-		class="absolute z-1 xl:col-start-2 xl:row-start-7 xl:col-span-2 xl:row-span-6 md:col-start-3 md:row-start-10 md:col-span-4 sm:col-span-6 sm:col-start-1 sm:row-span-6 col-span-6 bg-white flex flex-col justify-center p-12 max-w-[690px] max-h-[580px]"
+		class="fixed bottom-0 md:absolute md:bottom-[-7rem] left-0 z-1 bg-white flex flex-col justify-center p-12 max-w-[690px] max-h-[580px]"
 	>
 		<div
 			@click="$emit('close')"
