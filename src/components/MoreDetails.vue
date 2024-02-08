@@ -8,7 +8,9 @@ const offExplore = () => (showExplore.value = false);
 </script>
 
 <template>
-	<div class="relative col-start-2 col-span-6 row-start-6 row-span-2 flex flex-col justify-start rounded transition-colors duration-300 md:row-start-10 md:row-span-2 xl:col-start-2 xl:col-span-6">
+	<div
+		class="relative col-start-2 col-span-6 row-start-6 row-span-2 flex flex-col justify-start rounded transition-colors duration-300 md:row-start-10 md:row-span-2 xl:col-start-2 xl:col-span-6"
+	>
 		<Transition name="fade">
 			<section
 				v-show="!showExplore"
@@ -34,6 +36,7 @@ const offExplore = () => (showExplore.value = false);
 				</div>
 			</section>
 		</Transition>
+		<div @click="offExplore" v-show="showExplore" class="fixed inset-0 w-full h-full"></div>
 		<Transition name="slide-fade">
 			<Explore v-show="showExplore" @close="offExplore" />
 		</Transition>
