@@ -50,7 +50,9 @@ export default {
 		},
 	},
 	variants: {
-		extend: {},
+		extend: {
+			scale: ["active"],
+		},
 	},
 	plugins: [
 		require("tailwindcss-gradients"),
